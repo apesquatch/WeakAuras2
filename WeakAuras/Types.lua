@@ -2388,9 +2388,9 @@ if WeakAuras.IsClassicOrBCCOrWrath() then
 end
 if WeakAuras.IsWrathOrRetail() then
   Private.role_types = {
-    TANK = INLINE_TANK_ICON.." "..TANK,
-    DAMAGER = INLINE_DAMAGER_ICON.." "..DAMAGER,
-    HEALER = INLINE_HEALER_ICON.." "..HEALER
+    TANK = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:0:19:22:41|t "..TANK,
+    DAMAGER = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:20:39:1:20|t "..DAMAGER,
+    HEALER = "|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:20:39:22:41|t "..HEALER
   }
 end
 
