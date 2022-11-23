@@ -2493,13 +2493,6 @@ Private.send_chat_message_types = {
   ERROR = L["Error Frame"]
 }
 
-
-Private.send_chat_message_types.TTS = L["Text-to-speech"]
-Private.tts_voices = {}
-for i, voiceInfo in pairs(C_VoiceChat.GetTtsVoices()) do
-  Private.tts_voices[voiceInfo.voiceID] = voiceInfo.name
-end
-
 Private.group_aura_name_info_types = {
   aura = L["Aura Name"],
   players = L["Player(s) Affected"],

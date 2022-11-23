@@ -769,23 +769,6 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     }
     order = order + 1;
 
-    args["condition" .. i .. "value" .. j .. "message voice"] = {
-      type = "select",
-      width = WeakAuras.doubleWidth,
-      name = blueIfNoValue2(data, conditions[i].changes[j], "value", "message_voice", L["Voice"], L["Voice"]),
-      desc = (descIfNoValue2(data, conditions[i].changes[j], "value", "message_voice", propertyType, OptionsPrivate.Private.tts_voices) or "") .. "\n" .. L["Available Voices are system specific"],
-      values = OptionsPrivate.Private.tts_voices,
-      order = order,
-      get = function()
-        return type(conditions[i].changes[j].value) == "table" and conditions[i].changes[j].value.message_voice;
-      end,
-      set = setValueComplex("message_voice"),
-      hidden = function()
-        return not anyMessageType("TTS");
-      end,
-    }
-    order = order + 1;
-
     local message_getter = function()
       return type(conditions[i].changes[j].value) == "table" and conditions[i].changes[j].value.message;
     end
