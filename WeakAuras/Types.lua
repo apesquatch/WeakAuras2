@@ -6,10 +6,11 @@ local WeakAuras = WeakAuras;
 local L = WeakAuras.L;
 
 local LSM = LibStub("LibSharedMedia-3.0");
+local LCS = LibStub("LibClassicSpecs");
 
 local wipe, tinsert = wipe, tinsert
 local GetNumShapeshiftForms, GetShapeshiftFormInfo = GetNumShapeshiftForms, GetShapeshiftFormInfo
-local GetNumSpecializationsForClassID, GetSpecializationInfoForClassID = GetNumSpecializationsForClassID, GetSpecializationInfoForClassID
+local GetNumSpecializationsForClassID, GetSpecializationInfoForClassID = LCS.GetNumSpecializationsForClassID, LCS.GetSpecializationInfoForClassID
 local WrapTextInColorCode = WrapTextInColorCode
 local MAX_NUM_TALENTS = MAX_NUM_TALENTS or 20
 

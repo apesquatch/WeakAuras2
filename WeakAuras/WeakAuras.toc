@@ -22,6 +22,8 @@
 # External code + initialization
 embeds.xml
 
+Libs\LibClassicSpecs\LibClassicSpecs.lua
+
 Init.lua
 locales.xml
 ArchiveTypes\Repository.lua
